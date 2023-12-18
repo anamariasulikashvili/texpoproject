@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+.mySlides2 img {
+  width: 561px;
+ height: 562px;
+  object-fit: contain;
+ padding: 70px;
+}
+.slideshow-container2 {
+  position: relative;
+  margin-top: 30px;
+}
+.dots2{
+  width: 100px;
+height: 80px;
+object-fit: contain;
+  border-radius: 12px;
+border: 1px solid #E2E1E7;
+background: #FFF;
+padding: 15px;
+margin-right: 12px;
+cursor: pointer;
+}
+
+.pop-up{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(36, 32, 55, 0.60);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  overflow-y: scroll;
+  overflow: hidden;
+}
+.mySlides2{
+  display: none;
+border-radius: 12px;
+border: 1px solid #E2E1E7;
+background: #FFF;
+}
+.prev2{
+  position: absolute;
+  left: -70px;
+  top: 300px;
+}
+.next2{
+  position: absolute;
+  left: 580px;
+  top: 300px;
+  cursor: pointer;
+}
+.excit{
+  position: relative;
+  top:-702px;
+  left: 290px;
+  cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <button class="click">click here</button>
+
+
+    <div class="pop-up">
+        <div class="slideshow-container2">
+    
+            <div class="mySlides2">
+              <img src="photos/Samsung-Galaxy-A52 1.png">
+            </div>
+            
+            <div class="mySlides2">
+              <img src="photos/808ca1e042617478309ed46025ae1938.png">
+            </div>
+            
+            <div class="mySlides2">
+              <img src="photos/e25c597fe2405d9c39f45fa8f20d3d55.jpeg">
+            </div>
+  
+            <a class="prev2" onclick="plusSlides2(-1)"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+              <circle cx="24.5" cy="24.5" r="24.5" transform="matrix(-1 0 0 1 49 0)" fill="white" fill-opacity="0.2"/>
+              <path d="M15.99 24.9225L24.5 16.4125C23.95 15.8625 23.05 15.8625 22.5 16.4125L15 23.9125L16 24.9125L15.99 24.9225Z" fill="#E2E1E7"/>
+              <path d="M25.9102 20.6641V16.4141H24.4902V19.2441C24.4902 20.0241 25.1202 20.6641 25.9102 20.6641Z" fill="#E2E1E7"/>
+              <path d="M25.91 20.6641H33V22.0841H25.91V20.6641Z" fill="#E2E1E7"/>
+              <path d="M25.91 27.7539H33V29.1739H25.91V27.7539Z" fill="#E2E1E7"/>
+              <path d="M24.4999 33.4219H25.9199V29.1719C25.1399 29.1719 24.4999 29.8019 24.4999 30.5919V33.4219Z" fill="#E2E1E7"/>
+              <path d="M15.99 24.9219L24.49 33.4219C23.94 33.9719 23.04 33.9719 22.49 33.4219L14.99 25.9219L15.99 24.9219Z" fill="#E2E1E7"/>
+            </svg></a>
+            <a class="next2" onclick="plusSlides2(1)"><svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+              <circle cx="24.5" cy="24.5" r="24.5" fill="white" fill-opacity="0.2"/>
+              <path d="M33.01 24.9225L24.5 16.4125C25.05 15.8625 25.95 15.8625 26.5 16.4125L34 23.9125L33 24.9125L33.01 24.9225Z" fill="#E2E1E7"/>
+              <path d="M23.0898 20.6641V16.4141H24.5098V19.2441C24.5098 20.0241 23.8798 20.6641 23.0898 20.6641Z" fill="#E2E1E7"/>
+              <path d="M23.09 20.6641H16V22.0841H23.09V20.6641Z" fill="#E2E1E7"/>
+              <path d="M23.09 27.7539H16V29.1739H23.09V27.7539Z" fill="#E2E1E7"/>
+              <path d="M24.5001 33.4219H23.0801V29.1719C23.8601 29.1719 24.5001 29.8019 24.5001 30.5919V33.4219Z" fill="#E2E1E7"/>
+              <path d="M33.0098 24.9219L24.5098 33.4219C25.0598 33.9719 25.9598 33.9719 26.5098 33.4219L34.0098 25.9219L33.0098 24.9219Z" fill="#E2E1E7"/>
+            </svg></a>
+            
+            </div>
+            <br>
+            
+            <div>
+              <img src="photos/Samsung-Galaxy-A52 1.png" alt="" onclick="currentSlide2(1)"class="dots2">
+              <img src="photos/808ca1e042617478309ed46025ae1938.png" alt="" onclick="currentSlide2(2)"class="dots2">
+              <img src="photos/e25c597fe2405d9c39f45fa8f20d3d55.jpeg" alt="" onclick="currentSlide2(3)"class="dots2">
+              <img src="photos/svgexport-10 (78) 1.png" onclick="currentSlide(4)" class="dots2"></img>  
+            </div>
+            <img src="photos/Group 285.png" alt="" class="excit">
+        </div>
+    <script>
+        let btn = document.querySelector(".click")
+        let container = document.querySelector(".pop-up")
+
+        btn.onclick = () =>{
+            container.style.display = "flex";
+        }
+          
+        let excIt = document.querySelector(".excit");
+   excIt.onclick  = () =>{
+    container.style.display = "none";
+   }
+
+        function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+        let slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+function currentSlide2(n) {
+  showSlides2(slideIndex2 = n);
+}
+
+function showSlides2(n) {
+  let i;
+  let slides2 = document.getElementsByClassName("mySlides2");
+  let dots2 = document.getElementsByClassName("dot2");
+  if (n > slides2.length) {slideIndex2 = 1}    
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";  
+  }
+  for (i = 0; i < dots2.length; i++) {
+    dots2[i].className = dots2[i].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";  
+  dots2[slideIndex2-1].className += " active";
+}
+
+
+
+    </script>
+</body>
+</html>

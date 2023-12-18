@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "sans georgian";
+  src: url(fonts/NotoSansGeorgian-VariableFont_wdth\,wght.ttf);
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "sans georgian";
+}
+.namehead{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  gap: 5px;
+}
+.namehead p{
+  color: #6D6D6D;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+}
+.buttonWrapper{
+  display: flex;
+  flex-direction: column;
+gap: 4px;
+align-items: center;
+}
+.buttonWrapper button{
+  border: none;
+  width: 257px;
+height: 29px;
+text-align: left;
+background: none;
+color: #8D8D8D;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: lowercase;
+cursor: pointer;
+padding-left: 10px;
+}
+.buttonWrapper button:hover{
+  background: #F6F6F6;
+}
+.generalInput{
+width: 392px;
+height: 38px;
+border-radius: 6px;
+border: 1px solid #BDBDBD;
+background: #FFF;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-direction: row;
+padding: 10px;
+}
+.generalInput input:focus{
+  outline: none;
+}
+.generalInput input{
+  border: none;
+}
+.generalInput input::placeholder{
+  color: #8D8D8D;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: lowercase;
+}
+.first-box{
+  width: 279px;
+  height: 242px;
+  border-radius: 6px;
+  border: 1px solid #BDBDBD;
+  background: #FFF;
+  margin-right: 15px;
+}
+.content {
+  display: none;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+.content.active {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mainadress{
+  color: #6D6D6D;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+margin:25px 0px 12px;
+}
+.addadress{
+  width: 392px;
+  height: 38px;
+  border-radius: 6px;
+border: 1px solid #BDBDBD;
+padding: 11px 101px;
+display: flex;
+}
+.addadress p{
+  color: #8D8D8D;
+text-align: center;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+width: 150px;
+}
+.savebtn {
+  width: 151px;
+  height: 38px;
+color: #FFF;
+text-align: center;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+border-radius: 6px;
+background: #8DC63F;
+border: none;
+}
+.buttonalign{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.first-reg{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.registration2{
+  margin-bottom: 500px;
+}
